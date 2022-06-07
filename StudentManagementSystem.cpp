@@ -169,7 +169,7 @@ int main()
     myfile.open("data.csv");
     myfile << "Student No,Name,Surname,Roll Number,Quiz1 Marks,Assignment1 Marks,Exams Marks,Grade,isPass?,\n";
     for(int i{};i<number_Student;i++){
-        myfile << i << "," << s[i].saveName() << "," << s[i].saveSurname() << "," << s[i].saveRollNumber() << "," << s[i].saveQuiz1Marks() << "," << s[i].saveAssignment1Marks() << "," << s[i].saveExamMarks() << "," << s[i].saveGrade() << "," << boolalpha << s[i].pass() << "\n";
+        myfile << i+1 << "," << s[i].saveName() << "," << s[i].saveSurname() << "," << s[i].saveRollNumber() << "," << s[i].saveQuiz1Marks() << "," << s[i].saveAssignment1Marks() << "," << s[i].saveExamMarks() << "," << s[i].saveGrade() << "," << boolalpha << s[i].pass() << "\n";
     }
     myfile.close();
 
